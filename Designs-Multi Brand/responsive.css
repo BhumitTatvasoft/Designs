@@ -1,0 +1,29 @@
+@media (max-width: 645px) {
+    .trendii-multi-brand-image {
+        width: calc(100vw - 20px );
+    }
+}
+
+@media (max-width: 480px) {
+    .trendii-multi-brand-right-side-image-product-detail-space-ad-7 img, .trendii-multi-brand-right-side-image-product-detail-space-8 img {
+        height: 12px;
+    }
+
+    .trendii-multi-brand-right-side-image-product-detail-space-ad-7 em, .trendii-multi-brand-right-side-image-product-detail-space-8 em {
+        font-size: 12px;
+    }
+
+    .trendii-multi-brand-right-side-image-product-detail-space-ad-5 img, .trendii-multi-brand-right-side-image-product-detail-space-ad-6 img {
+        height: 15px;
+    }
+}
+
+@media (max-width: 417px) {
+    .trendii-multi-brand-right-side-image-product-detail-space-ad-7 img, .trendii-multi-brand-right-side-image-product-detail-space-8 img {
+        height: 10px;
+    }
+
+    .trendii-multi-brand-right-side-image-product-detail-space-ad-7 em, .trendii-multi-brand-right-side-image-product-detail-space-8 em {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,24 @@
+@media (max-width: 645px) {
+    .trendii-single-brand-image {
+        width: calc(100vw - 20px );
+    }
+}
+
+@media (max-width: 480px) {
+    .trendii-single-brand-right-side-image-product-detail-space-ad-7 p, .trendii-single-brand-right-side-image-product-detail-space-8 p {
+        font-size: 10px;
+    }
+
+    .trendii-single-brand-right-side-image-product-detail-space-ad-7 em, .trendii-single-brand-right-side-image-product-detail-space-8 em {
+        font-size: 10px;
+    }
+
+    .trendii-single-brand-ads-5 .trendii-product-detail-name-price em {
+        font-size: 13px;
+    }
+
+    .trendii-single-brand-ads-6 .trendii-product-detail-name-price em {
+        font-size: 12px;
+    }
+}
+
