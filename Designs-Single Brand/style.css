@@ -11,11 +11,13 @@
 body {
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
 
 .trendii-single-brand-ads {
     display: inline-block;
     padding: 10px 10px 0px;
+    margin-right: 100vw;
 }
 
 .trendii-single-brand-image {
@@ -30,7 +32,9 @@ body {
     object-fit: cover;
 }
 
-.trendii-single-brand-products, .trendii-single-brand-products-ad-lg, .trendii-single-brand-products-ad-md {
+.trendii-single-brand-products,
+.trendii-single-brand-products-ad-lg,
+.trendii-single-brand-products-ad-md {
     display: flex;
     border: 1px solid var(--trendii-product-image-border-color);
     height: auto;
@@ -55,7 +59,7 @@ body {
     padding: 3px 0 5px;
 }
 
-.trendii-single-brand-ads-logo-img img{
+.trendii-single-brand-ads-logo-img img {
     height: 18px;
 }
 
@@ -65,10 +69,12 @@ body {
 }
 
 .trendii-single-brand-ads-wrapper-product-detail {
-    height: calc( 100% - 30px);
+    height: calc(100% - 30px);
 }
 
-.trendii-single-brand-ads-wrapper-product-detail-row, .trendii-single-brand-ads-wrapper-product-detail-row-4, .trendii-single-brand-ads-wrapper-product-detail-row-5 {
+.trendii-single-brand-ads-wrapper-product-detail-row,
+.trendii-single-brand-ads-wrapper-product-detail-row-4,
+.trendii-single-brand-ads-wrapper-product-detail-row-5 {
     display: flex;
     flex-wrap: wrap;
     height: 100%;
@@ -139,7 +145,8 @@ body {
     padding: 0 10px
 }
 
-.trendii-single-brand-product-detail-name, .trendii-single-brand-product-detail-name-single {
+.trendii-single-brand-product-detail-name,
+.trendii-single-brand-product-detail-name-single {
     margin: 0;
     font-size: 14px;
     font-family: "Georgia";
@@ -169,7 +176,7 @@ body {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    color:  var(--trendii-product-text-color);
+    color: var(--trendii-product-text-color);
 }
 
 .trendii-single-brand-on-sale {
@@ -222,13 +229,16 @@ body {
     border-bottom-right-radius: 4px;
 }
 
-.trendii-single-brand-ads-wrapper-product-detail-row:hover .trendii-single-brand-view-button, .trendii-single-brand-ads-wrapper-product-detail-row-4:hover .trendii-single-brand-view-button,
-.trendii-single-brand-ads-wrapper-product-detail-row-5:hover .trendii-single-brand-view-button, .trendii-single-brand-ads-wrapper-product-detail-row-3:hover .trendii-single-brand-view-button,
-.trendii-product-image:hover .trendii-single-brand-view-button, .trendii-product-image-ad-7:hover .trendii-single-brand-view-button {
-  opacity: 1;
-  visibility: visible;
-  bottom: 0;
-  cursor: pointer;
+.trendii-single-brand-ads-wrapper-product-detail-row:hover .trendii-single-brand-view-button,
+.trendii-single-brand-ads-wrapper-product-detail-row-4:hover .trendii-single-brand-view-button,
+.trendii-single-brand-ads-wrapper-product-detail-row-5:hover .trendii-single-brand-view-button,
+.trendii-single-brand-ads-wrapper-product-detail-row-3:hover .trendii-single-brand-view-button,
+.trendii-product-image:hover .trendii-single-brand-view-button,
+.trendii-product-image-ad-7:hover .trendii-single-brand-view-button {
+    opacity: 1;
+    visibility: visible;
+    bottom: 0;
+    cursor: pointer;
 }
 
 .trendii-single-brand-left-image-product-ads-2 {
@@ -248,7 +258,7 @@ body {
     overflow: hidden;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 .trendii-single-brand-left-image-product-ads-4 {
@@ -278,7 +288,7 @@ body {
     overflow: hidden;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 .trendii-single-brand-right-side-image-product-detail-ads-4 {
@@ -304,7 +314,8 @@ body {
     height: 100%;
 }
 
-.trendii-single-brand-ads-row-2, .trendii-single-brand-ads-row-4 {
+.trendii-single-brand-ads-row-2,
+.trendii-single-brand-ads-row-4 {
     display: flex;
     align-items: center;
     height: 100%;
@@ -332,13 +343,13 @@ body {
     width: 100%;
     flex-wrap: wrap;
     /* flex-direction: column; */
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .trendii-single-brand-ads-5 {
     height: 100%;
     width: 20%;
-    padding:0 8px;
+    padding: 0 8px;
     box-sizing: border-box;
 }
 
@@ -421,19 +432,21 @@ body {
     overflow: hidden;
     display: flex;
     justify-content: center;
-    flex-direction: column;   
+    flex-direction: column;
 }
 
-.trendii-single-brand-right-side-image-product-detail-space-ad-7, .trendii-single-brand-right-side-image-product-detail-space-8 {
+.trendii-single-brand-right-side-image-product-detail-space-ad-7,
+.trendii-single-brand-right-side-image-product-detail-space-8 {
     padding-left: 10px;
 }
 
-.trendii-single-brand-right-side-image-product-detail-space-ad-7 em, .trendii-single-brand-right-side-image-product-detail-space-8 em {
+.trendii-single-brand-right-side-image-product-detail-space-ad-7 em,
+.trendii-single-brand-right-side-image-product-detail-space-8 em {
     font-size: 15px;
 }
 
 .trendii-product-image {
-    height: calc( 100% - 51px );
+    height: calc(100% - 51px);
     width: 100%;
     margin-bottom: 10px;
     box-sizing: border-box;
