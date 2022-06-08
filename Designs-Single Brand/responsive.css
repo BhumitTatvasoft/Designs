@@ -1,3 +1,12 @@
+@media (min-width: 645px) {
+    .trendii-single-brand-ads {
+        margin-right: 100vw;
+    }
+    body {
+        overflow-x: hidden;
+    }
+}
+
 @media (max-width: 645px) {
     .trendii-single-brand-image {
         width: calc(100vw - 20px );
