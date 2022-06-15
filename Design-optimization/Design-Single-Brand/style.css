@@ -48,7 +48,12 @@ body {
     width: 25%;
 }
 
-.horizontal-spacing {
+.h-space {
+    padding-right: 8px;
+    box-sizing: border-box;
+}
+
+.h-space-ad-5 {
     padding: 0 8px;
     box-sizing: border-box;
 }
@@ -67,29 +72,7 @@ body {
     width: auto;
 }
 
-.float-right {
-    height: 8px;
-    float: right;
-}
-
 /* Basic layout styling ends */
-
-.trendii-single-brand-ads {
-    display: inline-block;
-    padding: 10px 10px 0px;
-}
-
-.trendii-image {
-    box-sizing: border-box;
-    padding-bottom: 10px;
-    width: 625px;
-}
-
-.trendii-image img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
 
 .trendii-products {
     display: flex;
@@ -102,13 +85,19 @@ body {
     border-radius: 6px;
 }
 
-.trendii-ads-logo {
+.trendii-logo {
     width: 100%;
     padding: 3px 0 5px;
+    justify-content: space-between;
 }
 
-.trendii-ads-logo div img {
+.trendii-logo img {
     height: 18px;
+}
+
+.trendii-logo img:last-child {
+    height: 15px;
+    float: right;
 }
 
 .trendii-product-box-ad-1 {
@@ -172,14 +161,15 @@ body {
     overflow: hidden;
 }
 
-.trendii-product-image {
+/* Product images inner target styling starts */
+.innerTarget div:first-of-type {
     padding-bottom: 100%;
     box-sizing: border-box;
     position: relative;
     height: 100%;
 }
 
-.trendii-product-image img {
+.innerTarget div:first-of-type img {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -188,6 +178,37 @@ body {
     border: 1px solid var(--trendii-product-image-border-color);
     box-sizing: border-box;
 }
+
+.innerTarget span {
+    display: block;
+    padding: 2px 2px;
+    text-transform: uppercase;
+    position: absolute;
+    max-width: max-content;
+    top: 10px;
+    left: 0;
+    background: var(--trendii-on-sale-tag-color);
+    color: var(--trendii-on-sale-tag-font-color);
+    font-size: 8px;
+    line-height: 10px;
+    z-index: 2;
+}
+
+.innerTarget span::after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    border-left: 0 solid transparent;
+    border-right: 7px solid var(--trendii-on-sale-tag-light-color);
+    border-top: 7px solid var(--trendii-on-sale-tag-color);
+    border-bottom: 7px solid var(--trendii-on-sale-tag-color);
+}
+
+/* Product image inner target styling stops */
 
 .trendii-product-detail-ad-1 {
     flex: 0 0 70%;
@@ -251,27 +272,33 @@ body {
     border-bottom: 10px solid transparent;
 }
 
-.trendii-product-name {
+.productText p {
     margin: 0;
     font-size: 14px;
     font-family: "Georgia";
     line-height: 15px;
-    white-space: normal;
     text-overflow: ellipsis;
     overflow: hidden;
     -webkit-line-clamp: 2;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     color: var(--trendii-product-text-color);
-    padding-left: 0px;
-    padding-right: 0px;
 }
 
-.line-clamp {
+.productTextClamp p {
+    margin: 0;
+    font-size: 14px;
+    font-family: "Georgia";
+    line-height: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
     -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    color: var(--trendii-product-text-color);
 }
 
-.trendii-product-price {
+.productText em {
     font-size: 15px;
     font-family: "Georgia";
     line-height: 22px;
@@ -282,35 +309,6 @@ body {
     text-overflow: ellipsis;
     overflow: hidden;
     color: var(--trendii-product-text-color);
-}
-
-.trendii-sale-badge {
-    display: block;
-    padding: 2px 2px;
-    text-transform: uppercase;
-    position: absolute;
-    max-width: max-content;
-    top: 10px;
-    left: 0;
-    background: var(--trendii-on-sale-tag-color);
-    color: var(--trendii-on-sale-tag-font-color);
-    font-size: 8px;
-    line-height: 10px;
-    z-index: 2;
-}
-
-.trendii-sale-badge:after {
-    content: "";
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    left: 100%;
-    top: 0;
-    bottom: 0;
-    border-left: 0 solid transparent;
-    border-right: 7px solid var(--trendii-on-sale-tag-light-color);
-    border-top: 7px solid var(--trendii-on-sale-tag-color);
-    border-bottom: 7px solid var(--trendii-on-sale-tag-color);
 }
 
 .trendii-view-btn {
@@ -349,33 +347,28 @@ body {
 
 /* Responsive styling starts */
 
-@media (min-width: 645px) {
-    .trendii-single-brand-ads {
-        margin-right: 100vw;
-    }
-
-    body {
-        overflow-x: hidden;
-    }
-}
-
-@media (max-width: 645px) {
-    .trendii-image {
-        width: calc(100vw - 20px);
-    }
-}
-
 @media (max-width: 480px) {
-    .horizontal-spacing p {
+
+    .productTextClamp p,
+    .productText p {
         font-size: 10px;
+        line-height: 10px;
     }
 
-    .horizontal-spacing em {
+    .productTextClamp em,
+    .productText em {
         font-size: 10px;
+        line-height: 10px;
     }
 
-    .trendii-product-detail-ad-5 div em {
+    .trendii-product-detail-ad-5 em {
         font-size: 11px;
+        line-height: 10px;
+    }
+
+    .innerTarget span {
+        font-size: 5px;
+        padding: 1px 1px;
     }
 }
 

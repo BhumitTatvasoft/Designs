@@ -1,0 +1,32 @@
+.trendii-single-brand-ads {
+    display: inline-block;
+    padding: 10px 10px 0px;
+}
+
+.trendii-image {
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    width: 625px;
+}
+
+.trendii-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 645px) {
+    .trendii-single-brand-ads {
+        margin-right: 100vw;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 645px) {
+    .trendii-image {
+        width: calc(100vw - 20px);
+    }
+}
