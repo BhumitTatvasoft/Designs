@@ -54,6 +54,11 @@ body {
 }
 
 .h-space-ad-5 {
+    padding: 0 4px;
+    box-sizing: border-box;
+}
+
+.h-space-ad-7{
     padding: 0 8px;
     box-sizing: border-box;
 }
@@ -70,6 +75,10 @@ body {
 .negative-margin {
     margin: 0 -8px;
     width: auto;
+}
+
+.d-none{
+    display: none;
 }
 
 /* Basic layout styling ends */
@@ -155,11 +164,11 @@ body {
 }
 
 .trendii-padding-left{
-    padding-bottom: 179% !important;
+    padding-bottom: 150% !important;
 }
 
 .trendii-padding{
-    padding-bottom: 125% !important;
+    padding-bottom: 100% !important;
 }
 
 /* Product images inner target styling starts */
@@ -256,7 +265,7 @@ body {
     line-height: 15px;
     text-overflow: ellipsis;
     overflow: hidden;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 1;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     color: var(--trendii-product-text-color);
@@ -313,6 +322,24 @@ body {
     cursor: pointer;
 }
 
+.viewBtn button{
+    border: none;
+    background-color: black;
+    color: #ffffff;
+    margin-top: 5px;
+    border-radius: 6px;
+    font-size: 11px;
+    padding: 10% 20%; 
+}
+
+.btnPadding-ad-1{
+    padding: 2% 5% !important; 
+}
+
+.btnPadding{
+    padding: 5% 10% !important; 
+}
+
 /* Responsive styling starts */
 
 @media (max-width: 480px) {
@@ -334,6 +361,28 @@ body {
     .innerTarget span {
         font-size: 5px;
         padding: 1px 1px;
+    }
+
+    .d-none{
+        display: block;
+    }
+
+    .trendii-view-btn{
+        display: none;
+    }
+
+    .innerTarget span::after {
+        border-bottom: 5px solid var(--trendii-on-sale-tag-color);
+    }
+}
+
+@media (max-width: 1280px) {
+    .d-none{
+        display: block;
+    }
+
+    .trendii-view-btn{
+        display: none;
     }
 }
 
