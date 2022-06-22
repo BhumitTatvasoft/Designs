@@ -163,17 +163,13 @@ body {
     overflow: hidden;
 }
 
-.trendii-padding-left{
-    padding-bottom: 150% !important;
-}
-
-.trendii-padding{
-    padding-bottom: 100% !important;
+ .trendii-padding-left{
+    padding-bottom: 190% !important;
 }
 
 /* Product images inner target styling starts */
 .innerTarget div:first-of-type {
-    padding-bottom: 100%;
+    padding-bottom: 130%;
     box-sizing: border-box;
     position: relative;
     height: 100%;
@@ -327,7 +323,7 @@ body {
     background-color: black;
     color: #ffffff;
     margin-top: 5px;
-    border-radius: 6px;
+    border-radius: 4px;
     font-size: 11px;
     padding: 10% 20%; 
 }
@@ -384,6 +380,15 @@ body {
     .trendii-view-btn{
         display: none;
     }
+}
+
+@media (max-width: 350px) {
+ .trendii-padding-left{
+    padding-bottom: 200% !important;
+ }
+ .viewBtn button{
+    font-size: 9px; 
+}
 }
 
 /* Responsive styling ends */
